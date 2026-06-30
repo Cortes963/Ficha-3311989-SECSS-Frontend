@@ -6,9 +6,9 @@ export const roleCardsData = {
     borderClass: 'border-admin',
     icon: 'bi-gear-fill',
     actions: [
-      { label: 'Gestión de Usuarios', path: '/usuarios', icon: 'bi-people' },
-      { label: 'Configuración del Sistema', path: '/configuracion', icon: 'bi-sliders' },
-      { label: 'Auditoría de Accesos', path: '/auditoria', icon: 'bi-shield-lock' }
+      { label: 'Resgistros', path: '/usuarios', icon: 'bi-people' },
+      { label: 'Reportes', path: '/configuracion', icon: 'bi-sliders' },
+      { label: 'Cupos', path: '/auditoria', icon: 'bi-shield-lock' }
     ]
   },
   JEFE_SEGURIDAD: {
@@ -28,8 +28,9 @@ export const roleCardsData = {
     borderClass: 'border-celador',
     icon: 'bi-person-badge',
     actions: [
-      { label: 'Registrar Entrada/Salida', path: '/control-accesos', icon: 'bi-door-open' },
-      { label: 'Consulta de Cupos', path: '/cupos', icon: 'bi-p-circle' }
+      { label: 'Resgistros', path: '@/modules/input_output/pages/logbook.jsx', icon: 'bi-people' },
+      { label: 'Reportes', path: '/configuracion', icon: 'bi-sliders' },
+      { label: 'Cupos', path: '/auditoria', icon: 'bi-shield-lock' }
     ]
   },
   APRENDIZ: {
