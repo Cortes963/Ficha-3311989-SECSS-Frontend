@@ -22,7 +22,6 @@ export const DashboardPage = () => {
                 </div>
             </div>
       </section>
-
       {/* Tarjetas Dinámicas Originales */}
       <h3 class="mb-4 text-secss border-bottom pb-2"><i class="bi bi-layers-half"></i>Rol</h3>
       <div className="row g-4">
@@ -31,33 +30,32 @@ export const DashboardPage = () => {
           if (!cardInfo) return null;
 
           return (
-            <div className="col-md-6 col-xl-3" key={rolKey}>
-                <div className={`card role-card h-100 ${cardInfo.borderClass}`}>
-                    <div className={`card-header-role ${cardInfo.headerClass} text-white p-3`}>
-                        <i className={`${cardInfo.icon} fs-4`}></i>
-                      <span className="fw-bold fs-6">{cardInfo.title}</span>
-                    </div>
+            <div className="col-md-6 col-lg-3" key={rolKey}>
+              <div className={`card role-card h-100 ${cardInfo.borderClass} border-0 shadow-sm`}>
                 
-                        <div className="card-body d-flex flex-column justify-content-between">
-                        <p className="card-text text-muted small">Acceso Invitado.</p>
-                        </div>
-                        <div className="list-group list-group-flush mb-3">
-                          {cardInfo.actions.map((action, idx) => (
-                            <Link 
-                              key={idx}
-                              to={action.path} 
-                              className="list-group-item list-group-item-action small"
-                            >
-                              <i className={`${action.icon} text-secondary`}></i>
-                                    <a href="#" className="list-group-item list-group-item-action small"><i className="bi bi-map text-secondary"></i> Mapa del Centro (CEET)</a>
-                            <span className="fw-medium text-secondary">{action.label}</span>
-                        </div>
-                        <button className="btn btn-secondary w-100 btn-sm">Ver Contenido</button>
-                        ))}
-                    </div>
+                {/* Cabecera idéntica al diseño original */}
+                <div className={`card-header text-white ${cardInfo.headerClass} card-header-role d-flex align-items-center gap-3 p-3 border-0`}>
+                  <i className={`${cardInfo.icon} fs-4`}></i>
+                  <span className="fw-bold fs-6">{cardInfo.title}</span>
                 </div>
+                
+                {/* Cuerpo interactivo: El <Link> actúa directamente como el item de la lista */}
+                <div className="list-group list-group-flush">
+                  {cardInfo.actions.map((action, idx) => (
+                    <Link 
+                      key={idx}
+                      to={action.path} 
+                      className="list-group-item list-group-item-action d-flex align-items-center gap-3 py-3"
+                    >
+                      <i className={`${action.icon} text-success fs-5`}></i> 
+                      <span className="fw-medium text-secondary">{action.label}</span>
+                    </Link>
+                  ))}
+                </div>
+                
+              </div>
             </div>
-
+          );
         })}
       </div>
     </>
