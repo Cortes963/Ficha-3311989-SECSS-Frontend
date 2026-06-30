@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión - SECSS</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Logo -->
+    <div class="brand">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.awn2pqFwr0sSWQFnlLjomwHaFX?pid=Api&P=0&h=180"
+         alt="Logo SENA"
+         class="brand-icon">
+    <span>SECSS</span>
+</div>
+
+    <!-- Formulario -->
+    <div class="login-container">
+
+        <h2>Bienvenidos</h2>
+        <p>Por favor, inicia sesión para continuar.</p>
+
+        <form>
+
+            <!-- Correo -->
+            <div class="input-group">
+                <label for="email">Dirección de correo electrónico</label>
+
+                <div class="input-wrapper">
+                    <i class="fa-regular fa-envelope input-icon"></i>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="juanita.123@gmail.com"
+                        required
+                    >
+                </div>
+            </div>
+
+            <!-- Contraseña -->
+            <div class="input-group">
+                <label for="password">Contraseña</label>
+
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-lock input-icon"></i>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="********"
+                        required
+                    >
+
+                    <span class="show-password">Ver</span>
+                </div>
+            </div>
+
+            <!-- Olvidó contraseña -->
+            <a href="recuperar.html">¿Has olvidado tu contraseña?</a>
+
+            <!-- Botón -->
+            <button type="submit" class="login-btn">
+                Iniciar Sesión
+            </button>
+
+            <!-- Registro -->
+            <div class="signup-link">
+    ¿No tienes cuenta?
+    <a href="registro.html">Regístrate</a>
+</div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
