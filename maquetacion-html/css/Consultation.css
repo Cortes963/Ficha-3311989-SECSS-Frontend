@@ -1,0 +1,79 @@
+:root {
+    --sena-green: #39A900;
+    --sena-dark-green: #2e8600;
+    --secss-dark: #00324b;
+    --secss-gray-light: #f8f9fa;
+}
+
+/* Títulos y tipografías */
+.text-secss-title {
+    color: var(--secss-dark);
+    font-weight: 700;
+}
+
+.font-weight-bold {
+    font-weight: 600 !important;
+}
+
+.font-weight-medium {
+    font-weight: 500;
+}
+
+/* Caja de Búsqueda */
+.search-box-container {
+    border-left: 5px solid var(--secss-green) !important;
+    background-color: #ffffff;
+}
+
+.btn-secss-search {
+    background-color: var(--secss-green);
+    color: #ffffff;
+    font-weight: 500;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secss-search:hover {
+    background-color: var(--secss-dark-green);
+    color: #ffffff;
+}
+
+/* Tarjeta del Perfil del Aprendiz */
+.card-profile-apprentice {
+    background-color: #ffffff;
+    border-top: 4px solid var(--secss-dark) !important;
+}
+
+.avatar-wrapper .apprentice-photo {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border: 3px solid #e9ecef;
+}
+
+/* Secciones de Datos y Enlaces de Archivos */
+.text-success {
+    color: var(--secss-green) !important;
+}
+
+.bg-secss-main {
+    background-color: var(--secss-dark) !important;
+}
+
+.file-url {
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Componentes Interactivos */
+.border-top {
+    border-top: 1px solid #dee2e6 !important;
+}
+
+.border-bottom {
+    border-bottom: 2px solid #e9ecef !important;
+}

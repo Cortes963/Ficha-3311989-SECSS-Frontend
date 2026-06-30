@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Principal SECSS - CEET SENA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/Stylegeneral.css">
+    <link rel="stylesheet" href="../css/PageMajor.css">
+</head>
+<body>
+
+    <header class="header-secss py-3">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div class="logo-container d-flex align-items-center gap-3">
+                <div class="badge-sena">SENA</div>
+                <div>
+                    <h1 class="m-0 h4 text-white font-weight-bold">SECSS</h1>
+                    <small class="text-light">Sistema de Gestión y Control Tecnológico | CEET</small>
+                </div>
+            </div>
+            <div class="header-meta text-md-end text-center mt-2 mt-md-0 text-white-50">
+                <small>Centro de Electricidad, Electrónica y Telecomunicaciones</small>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secss-main sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-lg-none" href="#">SECSS Portal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#indexNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="indexNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#"><i class="bi bi-house-door-fill"></i> Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-shield-check"></i> Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-journal-text"></i> Pico y Placa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-people-fill"></i> Novedades</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-2">
+                    <div class="role-indicator px-2 py-1 rounded text-white small me-2">
+                        <i class="bi bi-person-badge"></i> Vista Global 
+                    </div>
+                    <button class="btn btn-secss-light btn-sm" type="button">Cerrar Sesión</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5 main-content">
+        
+        <section class="welcome-banner p-4 rounded shadow-sm mb-5 text-white">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h2 class="display-6 font-weight-bold">Bienvenido al Sistema SECSS</h2>
+                    <p class="lead mb-0">Plataforma de Servicio de Estacionamiento del Complejo Sur SENA.</p>
+                </div>
+                <div class="col-md-4 text-md-end text-center mt-3 mt-md-0">
+                    <span class="badge bg-white text-dark p-2"><i class="bi bi-calendar3"></i> Entorno de Pruebas v1.0</span>
+                </div>
+            </div>
+        </section>
+
+        <h3 class="mb-4 text-secss border-bottom pb-2"><i class="bi bi-layers-half"></i>Rol</h3>
+        
+        <div class="row g-4">
+            
+            <div class="col-md-6 col-xl-3">
+                <div class="card h-100 role-card border-admin">
+                    <div class="card-header-role bg-admin text-white p-3">
+                        <h5 class="m-0 d-flex justify-content-between align-items-center">
+                            Administrador 
+                            <i class="bi bi-person-gear"></i>
+                        </h5>
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <p class="card-text text-muted small">Gestión global del sistema: control de información y auditorías del sistema.</p>
+                        <div class="list-group list-group-flush mb-3">
+                            <a href="#" class="list-group-item list-group-item-action small"><i class="bi bi-shield-lock text-success"></i> Asignación de Permisos</a>
+                            <a href="#" class="list-group-item list-group-item-action small"><i class="bi bi-database-fill-gear text-success"></i> Respaldos (Backup)</a>
+                        </div>
+                        <button class="btn btn-secss w-100 btn-sm">Panel Admin</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+                <div class="card h-100 role-card border-seguridad">
+                    <div class="card-header-role bg-seguridad text-white p-3">
+                        <h5 class="m-0 d-flex justify-content-between align-items-center">
+                            Jefe Seguridad
+                            <i class="bi bi-shield-lock-fill"></i>
+                        </h5>
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <p class="card-text text-muted small">Supervisión en tiempo real de accesos, novedades en infraestructura física y control de minutas digitales.</p>
+                        <div class="list-group list-group-flush mb-3">
+                            <a href="#" class="list-group-item list-group-item-action small"><i class="bi bi-eye-fill text-primary"></i> Control de Novedades</a>
+                            <a href="#" class="list-group-item list-group-item-action small"><i class="bi bi-file-earmark-bar-graph text-primary"></i> Reportar Incidente</a>
+                            <a href="#" class="list-group-item list-group-item-action small"><i class="bi bi-clock-history text-primary"></i> Historial de Turnos</a>
+                        </div>
+                        <button class="btn btn-secss w-100 btn-sm">Control de Celador</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+                <div class="card h-100 role-card border-aprendiz">
+                    <div class="card-header-role bg-aprendiz text-white p-3">
+                        <h5 class="m-0 d-flex justify-content-between align-items-center">
+                            Aprendiz
+                            <i class="bi bi-mortarboard-fill"></i>
+                        </h5>
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <p class="card-text text-muted small">Consulta de estado, registro de asistencia técnica y solicitud de herramientas de préstamo.</p>
+                        <div class="list-group list-group-flush mb-3">
+                            <a href="#" class="list-group-item list-group-item-action small"><i class="bi bi-search text-dark"></i> Consultar Estado</a>
+                            <a href="#" class="list-group-item list-group-item-action small"><i class="bi bi-plus-circle text-dark"></i> Registrar Ingreso</a>
+                            <a href="#" class="list-group-item list-group-item-action small"><i class="bi bi-box-seam text-dark"></i> Mis Solicitudes</a>
+                        </div>
+                        <button class="btn btn-secss w-100 btn-sm">Mi Espacio</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+                <div class="card h-100 role-card border-invitado">
+                    <div class="card-header-role bg-invitado text-white p-3">
+                        <h5 class="m-0 d-flex justify-content-between align-items-center">
+                            Invitado
+                            <i class="bi bi-person-vcard"></i>
+                        </h5>
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <p class="card-text text-muted small">Acceso Invitado.</p>
+                        <div class="list-group list-group-flush mb-3">
+                            <a href="#" class="list-group-item list-group-item-action small"><i class="bi bi-map text-secondary"></i> Mapa del Centro (CEET)</a>
+                            <a href="#" class="list-group-item list-group-item-action small"><i class="bi bi-info-circle text-secondary"></i> Información General</a>
+                        </div>
+                        <button class="btn btn-secondary w-100 btn-sm">Ver Contenido</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <section class="mt-5 p-4 bg-white border rounded shadow-sm">
+            <h4 class="text-secss mb-3"><i class="bi bi-hdd-network-fill"></i> Resumen de la Estructura de Datos</h4>
+            <p class="small text-muted">Este prototipo web se encuentra acoplado al modelo relacional del sistema que incluye entidades críticas como: <strong>Usuarios, Roles, Ambientes, Elementos, Registro_Ingreso y Reporte_Novedades</strong>, asegurando la trazabilidad operativa demandada por el CEET.</p>
+        </section>
+
+    </main>
+
+    <footer class="footer-secss mt-auto py-4">
+        <div class="container">
+            <div class="row g-4 text-center text-md-start">
+                <div class="col-md-6">
+                    <h5 class="text-white mb-3">Proyecto SECSS</h5>
+                    <p class="text-white-50 small mb-0">
+                        Aplicación web SENA CEET.
+                    </p>
+                </div>
+                <div class="col-md-3 text-md-center">
+                    <h6 class="text-white mb-3">Enlaces Útiles</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">SENA Sofía Plus</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 text-md-end">
+                    <h6 class="text-white mb-3">Información</h6>
+                    <p class="text-white-50 small mb-1">© 2026 SECSS App</p>
+                    <p class="text-white-50 small">Bogotá, Colombia</p>
+                </div>
+            </div>
+            <hr class="border-secondary my-3">
+            <div class="text-center text-white-50 small">
+                <p class="mb-0">Diseñado con fines académicos - Programa de Formación de Aprendices SENA</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+/* Colores institucionales y variables del sistema SECSS */
+:root {
+    --sena-color: #39A900;
+    --secss-dark: #00324D;
+    --secss-light: #F2F4F7;
+    --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Estilos de la plantilla General / Navbar */
+.bg-secss-main {
+    background-color: var(--secss-dark) !important;
+}
+.header-secss {
+    background: linear-gradient(135deg, #001A29 0%, var(--secss-dark) 100%);
+}
+.badge-sena {
+    background-color: var(--sena-color);
+    color: white;
+    padding: 5px 12px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.btn-secss-light {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.btn-secss-light:hover {
+    background-color: white;
+    color: var(--secss-dark);
+}
+.footer-secss {
+    background-color: #001A29;
+}
+
+/* --- Estilos Específicos para la consulta de Cupos --- */
+.cupo-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.2s ease;
+    background: white;
+}
+.cupo-card:hover {
+    transform: translateY(-5px);
+}
+.card-icon-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+.bg-moto-light {
+    background-color: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+}
+.bg-bici-light {
+    background-color: rgba(57, 169, 0, 0.1);
+    color: var(--sena-color);
+}
+.progress {
+    border-radius: 8px;
+    background-color: #E9ECEF;
+}
+.progress-bar-sena {
+    background-color: var(--sena-color);
+}
+.table-responsive-custom {
+    box-shadow: var(--card-shadow);
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+}
+.table-custom-header {
+    background-color: var(--secss-dark);
+    color: white;
+}
+.status-pill {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+.status-active {
+    background-color: rgba(57, 169, 0, 0.15);
+    color: var(--sena-color);
+}
+.img-thumbnail-preview {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+}
