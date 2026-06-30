@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background: #f5f7f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo */
+
+.brand{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.brand-icon{
+    width: 80px;
+    height: auto;
+}
+
+.brand span{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0b5d1e;
+}
+
+/* Contenedor */
+
+.login-container{
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.login-container h2{
+    text-align: center;
+    color: #0b5d1e;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.login-container p{
+    text-align: center;
+    color: #666;
+    margin-bottom: 35px;
+}
+
+/* Inputs */
+
+.input-group{
+    margin-bottom: 25px;
+}
+
+.input-group label{
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 500;
+}
+
+.input-wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon{
+    position: absolute;
+    left: 15px;
+    color: #777;
+}
+
+.input-wrapper input{
+    width: 100%;
+    padding: 15px 15px 15px 50px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+.input-wrapper input:focus{
+    border-color: #39A900;
+    box-shadow: 0 0 8px rgba(57,169,0,.2);
+}
+
+/* Ver contraseña */
+
+.show-password{
+    position: absolute;
+    right: 15px;
+    color: #39A900;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Olvidé contraseña */
+
+.forgot-pass{
+   .forgot-pass{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+}
+
+.forgot-pass a{
+    text-decoration: none;
+    color: #39A900;
+}
+
+.forgot-pass a:hover{
+    text-decoration: underline;
+}
+
+/* Botón */
+
+.login-btn{
+    width: 100%;
+    padding: 15px;
+    background: #39A900;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.login-btn:hover{
+    background: #2f8700;
+}
+
+/* Registro */
+
+.signup-link{
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.signup-link a{
+    text-decoration: none;
+    color: #39A900;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.signup-link a:hover{
+    text-decoration: underline;
+}
+
+/* Responsive */
+
+@media (max-width: 768px){
+
+    .login-container{
+        width: 90%;
+        padding: 25px;
+    }
+
+    .login-container h2{
+        font-size: 2rem;
+    }
+
+    .brand span{
+        font-size: 2rem;
+    }
+
+    .brand-icon{
+        width: 60px;
+    }
+}
+
+

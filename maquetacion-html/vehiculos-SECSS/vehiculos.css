@@ -1,0 +1,189 @@
+:root {
+    /* Paleta de Verdes SENA - CEET */
+    --secss-green-dark: #1b5e20;   /* Verde oscuro institucional */
+    --secss-green-main: #39a900;   /* Verde principal SENA */
+    --secss-green-light: #e8f5e9;  /* Verde claro de fondo */
+    
+    /* Identidad CEET (Electricidad, Electrónica y Telecomunicaciones) */
+    --ceet-blue-tech: #00324d;     /* Azul profundo tecnológico de telecomunicaciones */
+    --ceet-silver: #eceff1;        /* Gris claro metalizado industrial */
+    
+    /* Neutros */
+    --secss-gray-dark: #212529;    /* Gris oscuro para textos */
+    --secss-white: #ffffff;
+    
+    /* Tipografía */
+    --font-principal: 'Work Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.text-secss-title {
+    color: var(--secss-dark);
+    font-weight: 700;
+}
+
+.font-weight-bold {
+    font-weight: 600 !important;
+}
+
+.font-weight-medium {
+    font-weight: 500;
+}
+
+/* Caja de Búsqueda */
+.search-box-container {
+    border-left: 5px solid var(--secss-green) !important;
+    background-color: #ffffff;
+}
+
+.bg-secss-main {
+    background-color: var(--secss-dark) !important;
+}
+.header-secss {
+    background: linear-gradient(135deg, #001A29 0%, var(--secss-gray-dark) 100%);
+    color: var(--secss-white); /* Asegura que los textos internos sean blancos */
+    border-bottom: 4px solid var(--secss-green-main) !important;
+}
+.badge-sena {
+    background-color: var(--sena-color);
+    color: white;
+    padding: 5px 12px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.btn-secss-light {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.btn-secss-light:hover {
+    background-color: white;
+    color: var(--secss-dark);
+}
+.footer-secss {
+    background-color: #001A29;
+}
+
+
+.logo{
+    width: 125px;
+    height: 125px;
+    object-fit: contain;
+}
+
+
+body{
+
+    /* Gradiente suave de azul pastel a verde pastel en diagonal (135 grados) */
+    background: linear-gradient(135deg, #e3f2fd 0%, #e8f5e9 100%);
+    background-attachment: fixed; /* Mantiene el fondo estático al hacer scroll */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
+    margin: 0;
+}
+
+
+
+.navbar{
+    background:#39A900;
+}
+
+.logo{
+    width:60px;
+    height:60px;
+    object-fit:contain;
+}
+
+.navbar-brand h5{
+    color:white;
+    font-weight:bold;
+}
+
+.navbar-brand small{
+    color:#e8f5e9;
+}
+
+
+.card{
+    border-radius:20px;
+}
+
+.card-header{
+    padding:20px;
+    background: linear-gradient(135deg, #2798d4 0%, var(--ceet-blue-tech) 100%);
+    color: var(--secss-white); /* Asegura que los textos internos sean blancos */
+    border-bottom: 4px solid var(--secss-green-main) !important;
+}
+
+.card-header h2{
+    margin-bottom:5px;
+}
+
+.card-body{
+    padding:35px;
+}
+
+
+.form-label{
+    font-weight:600;
+}
+
+.form-control,
+.form-select{
+    border-radius:10px;
+}
+
+.form-control:focus,
+.form-select:focus{
+    border-color:#39A900;
+    box-shadow:0 0 0 .2rem rgba(57,169,0,.25);
+}
+
+
+.btn-success{
+    background:#39A900;
+    border:none;
+}
+
+.btn-success:hover{
+    background:#2d8500;
+}
+
+
+.section-title{
+    color:#39A900;
+    font-weight:bold;
+    margin-top:30px;
+    margin-bottom:20px;
+}
+
+
+#motoFields,
+#biciFields{
+    display:none;
+}
+
+
+@media(max-width:768px){
+
+.logo{
+    width:45px;
+    height:45px;
+}
+
+.card-body{
+    padding:20px;
+}
+
+}
+
+/*boton registro*/
+
+.btn-submit {
+    background:#39A900;
+    border:none;
+}
+
+.btn-submit:hover{
+    background:#2d8500;
+}
+

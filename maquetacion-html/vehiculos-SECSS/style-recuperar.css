@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recovery-container{
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.recovery-container h2{
+    text-align: center;
+    color: #0b5d1e;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.recovery-container p{
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.input-group{
+    margin-bottom: 20px;
+}
+
+.input-group label{
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+}
+
+.input-group input{
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.input-group input:focus{
+    border-color: #39A900;
+    box-shadow: 0 0 8px rgba(57,169,0,0.2);
+}
+
+.btn-recuperar{
+    width: 100%;
+    padding: 15px;
+    background: #39A900;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-recuperar:hover{
+    background: #2f8700;
+}
+
+.volver-login{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.volver-login a{
+    color: #39A900;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.volver-login a:hover{
+    text-decoration: underline;
+}
