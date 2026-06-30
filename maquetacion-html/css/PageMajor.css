@@ -1,0 +1,90 @@
+
+
+/* Banner de Bienvenida con degradado tecnológico usando el Azul CEET y Verde SENA */
+.welcome-banner {
+    background: linear-gradient(135deg, var(--ceet-blue-tech) 0%, var(--secss-green-dark) 100%);
+    border-left: 6px solid var(--secss-green-main);
+}
+
+/* Indicador de rol en el navbar */
+.role-indicator {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-weight: 500;
+}
+
+/* Efectos Base para las Tarjetas de Roles (Hereda la estructura general de tu CSS) */
+.role-card {
+    border-radius: 8px !important;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.role-card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12) !important;
+}
+
+/* Personalización de la parte superior de cada tarjeta */
+.card-header-role {
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Estilos de las sub-listas de acciones */
+.role-card .list-group-item {
+    border-left: none;
+    border-right: none;
+    padding: 10px 0px;
+    background-color: transparent;
+    transition: padding-left 0.2s ease;
+}
+
+.role-card .list-group-item:hover {
+    padding-left: 6px;
+    background-color: var(--secss-green-light);
+    color: var(--secss-green-dark);
+}
+
+/* Segmentación de Bordes y Encabezados usando la Jerarquía de Colores */
+
+/* Administrador */
+.bg-admin {
+    background-color: var(--secss-green-main) !important;
+}
+.border-admin {
+    border-top: 4px solid var(--secss-green-main) !important;
+}
+
+/* Jefe de Seguridad  */
+.bg-seguridad {
+    background-color: var(--ceet-blue-tech) !important;
+}
+.border-seguridad {
+    border-top: 4px solid var(--ceet-blue-tech) !important;
+}
+
+/* Aprendiz  */
+.bg-aprendiz {
+    background-color: var(--secss-green-main) !important;
+}
+.border-aprendiz {
+    border-top: 4px solid var(--secss-green-main) !important;
+}
+
+/* Invitado  */
+.bg-invitado {
+    background-color: #6c757d !important;
+}
+.border-invitado {
+    border-top: 4px solid #6c757d !important;
+}
+
+/* Forzar color negro en los textos e iconos de los encabezados de las tarjetas */
+.card-header-role, 
+.card-header-role h5, 
+.card-header-role i {
+    color: #000000 !important;
+}

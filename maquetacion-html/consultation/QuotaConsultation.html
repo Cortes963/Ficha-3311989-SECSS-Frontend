@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Detallada de Cupos - SECSS CEET</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/Stylegeneral.css">
+    <link rel="stylesheet" href="../css/PageMajor.css">
+    <link rel="stylesheet" href="../css/Quota.css">
+    
+
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+    <!-- HEADER INSTITUCIONAL -->
+    <header class="header-secss py-3">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div class="logo-container d-flex align-items-center gap-3">
+                <div class="badge-sena">SENA</div>
+                <div>
+                    <h1 class="m-0 h4 text-white font-weight-bold">SECSS</h1>
+                    <small class="text-light">Sistema de Gestión y Control Tecnológico | CEET</small>
+                </div>
+            </div>
+            <div class="header-meta text-md-end text-center mt-2 mt-md-0 text-white-50">
+                <small>Centro de Electricidad, Electrónica y Telecomunicaciones</small>
+            </div>
+        </div>
+    </header>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secss-main sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-lg-none" href="#">SECSS Portal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#indexNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="indexNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-house-door-fill"></i> Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-shield-check"></i> Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-journal-text"></i> Pico y Placa</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#"><i class="bi bi-pie-chart-fill"></i> Control de Cupos</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-2">
+                    <div class="role-indicator px-2 py-1 rounded text-white small me-2">
+                        <i class="bi bi-person-badge"></i> Vista Global 
+                    </div>
+                    <button class="btn btn-secss-light btn-sm" type="button">Cerrar Sesión</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container my-5">
+        
+        <!-- Encabezado de la página -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Inicio</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Consulta de Cupos</li>
+                    </ol>
+                </nav>
+                <h2 class="fw-bold text-dark"><i class="bi bi-calendar2-check-fill text-success"></i> Monitoreo de Cupos en Tiempo Real</h2>
+                <p class="text-muted">Estado detallado de disponibilidad y ocupación del parqueadero para Motos y Bicicletas en el CEET.</p>
+            </div>
+        </div>
+
+        <!-- SECCIÓN DE INDICADORES / CUPOSTOTALES -->
+        <div class="row g-4 mb-5">
+            <!-- Cupo de Motos -->
+            <div class="col-md-6">
+                <div class="card cupo-card p-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="card-icon-avatar bg-moto-light">
+                                <i class="bi bi-bicycle"></i> <!-- Representación Moto en Icons -->
+                            </div>
+                            <div>
+                                <h4 class="m-0 fw-bold">Cupo de Motocicletas</h4>
+                                <small class="text-muted">Motos autorizadas (Aprendices/Instructores)</small>
+                            </div>
+                        </div>
+                        <span class="badge bg-primary rounded-pill px-3 py-2 fs-6">75 Cupos Asignados</span>
+                    </div>
+                    <div class="mt-2">
+                        <div class="d-flex justify-content-between small text-muted mb-1">
+                            <span>Ocupación: </span>
+                            <span>45 Motos adentro</span>
+                        </div>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 37.5%" aria-valuenow="37.5" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cupo de Bicicletas -->
+            <div class="col-md-6">
+                <div class="card cupo-card p-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="card-icon-avatar bg-bici-light">
+                                <i class="bi bi-universal-access-circle"></i> <!-- Icono de apoyo estructural biciparking -->
+                            </div>
+                            <div>
+                                <h4 class="m-0 fw-bold">Cupo de Bicicletas</h4>
+                                <small class="text-muted">Bastidores y celdas estructurales</small>
+                            </div>
+                        </div>
+                        <span class="badge bg-success rounded-pill px-3 py-2 fs-6">70 Cupos Asignados</span>
+                    </div>
+                    <div class="mt-2">
+                        <div class="d-flex justify-content-between small text-muted mb-1">
+                            <span>Ocupación: </span>
+                            <span>50 Bicicletas adentro</span>
+                        </div>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar progress-bar-sena progress-bar-striped progress-bar-animated" role="progressbar" style="width: 62.5%" aria-valuenow="62.5" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN DE TABLAS DETALLADAS (Mapeo de Entidades Relacionales) -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-header bg-white py-3 d-flex justify-content-between align-items-center border-bottom">
+                        <h5 class="m-0 fw-bold text-dark"><i class="bi bi-list-stars text-primary"></i> Detalle de Vehículos en Parqueadero</h5>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-filter"></i> Filtrar por Tipo</button>
+                            <button class="btn btn-sm btn-primary"><i class="bi bi-arrow-clockwise"></i> Actualizar</button>
+                        </div>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle mb-0">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th class="ps-4">Propietario / Aprendiz</th>
+                                        <th>Tipo Vehículo</th>
+                                        <th>Datos Técnicos (Placa/Marco)</th>
+                                        <th>Características</th>
+                                        <th>Registro Fotográfico</th>
+                                        <th class="pe-4">Estado Ingreso</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Registro Fila 1: Relación Moto -->
+                                    <tr>
+                                        <td class="ps-4">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <img src="https://via.placeholder.com/150" class="rounded-circle" width="40" height="40" alt="Usuario">
+                                                <div>
+                                                    <span class="fw-semibold d-block">Carlos Mario Restrepo</span>
+                                                    <small class="text-muted">Ficha: 2617482</small>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="badge bg-primary-subtle text-primary border border-primary-subtle">Moto</span></td>
+                                        <td>
+                                            <span class="fw-bold text-uppercase d-block">ABC-123</span>
+                                            <small class="text-muted">Cilindraje: 150cc | Mod: 2023</small>
+                                        </td>
+                                        <td>
+                                            <span class="d-block text-muted small"><strong>Marca:</strong> Yamaha</span>
+                                            <span class="d-block text-muted small"><strong>Color:</strong> Negro Mate</span>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex gap-1">
+                                                <i class="bi bi-file-earmark-image text-primary fs-5" title="SOAT" style="cursor:pointer;"></i>
+                                                <i class="bi bi-card-image text-success fs-5" title="Tarjeta de Propiedad" style="cursor:pointer;"></i>
+                                                <i class="bi bi-front text-info fs-5" title="Foto Vehículo" style="cursor:pointer;"></i>
+                                            </div>
+                                        </td>
+                                        <td class="pe-4">
+                                            <span class="status-pill status-active"><i class="bi bi-check-circle-fill"></i> Activo (Dentro)</span>
+                                        </td>
+                                    </tr>
+
+                                    <!-- Registro Fila 2: Relación Bicicleta -->
+                                    <tr>
+                                        <td class="ps-4">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <img src="https://via.placeholder.com/150" class="rounded-circle" width="40" height="40" alt="Usuario">
+                                                <div>
+                                                    <span class="fw-semibold d-block">Ana María Vanegas</span>
+                                                    <small class="text-muted">Ficha: 2554190</small>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="badge bg-success-subtle text-success border border-success-subtle">Bicicleta</span></td>
+                                        <td>
+                                            <span class="fw-bold text-uppercase d-block">MARCO-987654</span>
+                                            <small class="text-muted">Clase: Montaña (Mtb)</small>
+                                        </td>
+                                        <td>
+                                            <span class="d-block text-muted small"><strong>Marca:</strong> GW</span>
+                                            <span class="d-block text-muted small"><strong>Color:</strong> Verde/Gris</span>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex gap-1">
+                                                <i class="bi bi-card-image text-success fs-5" title="Identificación Marco" style="cursor:pointer;"></i>
+                                                <i class="bi bi-front text-info fs-5" title="Foto Bicicleta" style="cursor:pointer;"></i>
+                                            </div>
+                                        </td>
+                                        <td class="pe-4">
+                                            <span class="status-pill status-active"><i class="bi bi-check-circle-fill"></i> Activo (Dentro)</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER INSTITUCIONAL -->
+    <footer class="footer-secss mt-auto py-4">
+        <div class="container">
+            <div class="row g-4 text-center text-md-start">
+                <div class="col-md-6">
+                    <h5 class="text-white mb-3">Proyecto SECSS</h5>
+                    <p class="text-white-50 small mb-0">
+                        Aplicación web SENA CEET.
+                    </p>
+                </div>
+                <div class="col-md-3 text-md-center">
+                    <h6 class="text-white mb-3">Enlaces Útiles</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#" class="text-white-50 text-decoration-none">SENA Sofía Plus</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 text-md-end">
+                    <h6 class="text-white mb-3">Información</h6>
+                    <p class="text-white-50 small mb-1">© 2026 SECSS App</p>
+                    <p class="text-white-50 small">Bogotá, Colombia</p>
+                </div>
+            </div>
+            <hr class="border-secondary my-3">
+            <div class="text-center text-white-50 small">
+                <p class="mb-0">Diseñado con fines académicos - Programa de Formación de Aprendices SENA</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

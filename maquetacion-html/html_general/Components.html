@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECSS - CEET SENA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/Stylegeneral.css">
+</head>
+<body>
+
+    <header class="header-secss py-3">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div class="logo-container d-flex align-items-center gap-3">
+                <div class="badge-sena">SENA</div>
+                <div>
+                    <h1 class="m-0 h4 text-white font-weight-bold">SECSS</h1>
+                    <small class="text-light">Sistema de Gestión y Control Tecnológico | CEET</small>
+                </div>
+            </div>
+            <div class="header-meta text-md-end text-center mt-2 mt-md-0 text-white-50">
+                <small>Centro de Electricidad, Electrónica y Telecomunicaciones</small>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secss-main sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-lg-none" href="#">Menú SECSS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Módulos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Registros
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ver Formularios</a></li>
+                            <li><a class="dropdown-item" href="#">Tablas de Datos</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Reportes del Sistema</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Configuración</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center gap-2">
+                    <span class="text-white me-2 d-none d-md-inline"><small>Bienvenido, Aprendiz</small></span>
+                    <button class="btn btn-secss-light btn-sm" type="button">Cerrar Sesión</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5 main-content">
+        
+        <section class="mb-4">
+            <div class="alert alert-secss" role="alert">
+                <h4 class="alert-heading">¡Operación Exitosa!</h4>
+                <p>El sistema SECSS se encuentra sincronizado con los lineamientos de diseño institucional del SENA y la paleta tecnológica del CEET.</p>
+                <hr>
+                <p class="mb-0">Usa las clases de margen utilitarias para mantener el flujo limpio.</p>
+            </div>
+            
+            <div class="d-flex align-items-center gap-3 mb-4">
+                <div class="spinner-secss" role="status"></div>
+                <span>Cargando componentes del sistema...</span>
+            </div>
+        </section>
+
+        <section class="row g-3 mb-5">
+            <div class="col-md-4">
+                <div class="p-4 border bg-white text-center rounded shadow-sm card-secss">
+                    <h5 class="text-secss">Panel de Control</h5>
+                    <p class="text-muted small">Acceso rápido a las métricas del supermercado.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4 border bg-white text-center rounded shadow-sm card-secss">
+                    <h5 class="text-secss">Inventarios</h5>
+                    <p class="text-muted small">Gestión de productos y categorías actuales.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4 border bg-white text-center rounded shadow-sm card-secss">
+                    <h5 class="text-secss">Usuarios</h5>
+                    <p class="text-muted small">Administración de aprendices e instructores.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="dropdown">
+                    <button class="btn btn-dark dropdown-toggle bg-secss-main border-0" data-bs-toggle="dropdown" aria-expanded="false">
+                        Menú Opciones
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark bg-secss-dark">
+                        <li><a class="dropdown-item" href="#">Acción 1</a></li>
+                        <li><a class="dropdown-item" href="#">Acción 2</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="link-secss">Este es un enlace de ejemplo con estilo SECSS</a>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="p-3 border bg-white text-center rounded shadow-sm">Columna 1</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 border bg-white text-center rounded shadow-sm">Columna 2</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 border bg-white text-center rounded shadow-sm">Columna 3</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5 table-responsive">
+            <table class="table table-secss table-hover align-middle shadow-sm">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellido</th>
+                        <th scope="col">Usuario</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>@social</td>
+                    </tr>
+                </tbody>
+            </table>  
+        </section>
+
+        <section class="mb-5">
+            <div class="card card-secss shadow-sm">
+                <div class="card-header bg-secss-light text-secss font-weight-bold">
+                    Panel Informativo
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Título especial del módulo</h5>
+                    <p class="card-text">Soporte de texto inferior que sirve de introducción para el contenido adicional de la app.</p>
+                    <a href="#" class="btn btn-secss">Ir a algún lado</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="row g-4 mb-5">
+            <div class="col-lg-4">
+                <div class="p-4 bg-white border rounded shadow-sm h-100">
+                    <h4 class="mb-3 text-secss">Datos Básicos</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">Nunca compartiremos tu correo.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Recuérdame</label>
+                        </div>
+                        <button type="submit" class="btn btn-secss w-100">Enviar Datos</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                <div class="p-4 bg-white border rounded shadow-sm h-100">
+                    <h4 class="mb-3 text-secss">Formulario de Registro Completo</h4>
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputPassword4" class="nav-label mb-2 d-block">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Dirección</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Calle 10 #23-45">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress2" class="form-label">Dirección 2 (Opcional)</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, bloque o torre">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label">Ciudad</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputState" class="form-label">Departamento</label>
+                            <select id="inputState" class="form-select">
+                                <option selected>Selecciona...</option>
+                                <option>Huila</option>
+                                <option>Meta</option>
+                                <option>Caquetá</option>
+                                <option>Bogotá D.C.</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="inputZip" class="form-label">Cód. Postal</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Acepto términos y condiciones
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-secss">Registrar Usuario</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-4">
+            <h4 class="mb-3 text-secss">Control de Acciones (Botones)</h4>
+            <div class="d-flex flex-wrap gap-2 align-items-center p-3 bg-white border rounded shadow-sm">
+                <button type="button" class="btn btn-secss">Botón SECSS Principal</button>
+                <button type="button" class="btn btn-secondary">Secundario</button>
+                <button type="button" class="btn btn-success">Éxito</button>
+                <button type="button" class="btn btn-danger">Peligro</button>
+                <button type="button" class="btn btn-warning">Advertencia</button>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-light">Claro</button>
+                <button type="button" class="btn btn-dark">Oscuro</button>
+                <button type="button" class="btn-close" aria-label="Close"></button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer-secss mt-auto py-4">
+        <div class="container">
+            <div class="row g-4 text-center text-md-start">
+                <div class="col-md-6">
+                    <h5 class="text-white mb-3">Proyecto SECSS</h5>
+                    <p class="text-white-50 small mb-0">
+                        Aplicación web desarrollada como evidencia técnica bajo los estándares y guías de aprendizaje del SENA CEET. Desarrollado en el entorno de desarrollo web y bases de datos relacionales.
+                    </p>
+                </div>
+                <div class="col-md-3 text-md-center">
+                    <h6 class="text-white mb-3">Enlaces Útiles</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">SENA Sofía Plus</a></li>
+                        <li><a href="#">Territorium</a></li>
+                        <li><a href="#">Soporte Técnico</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 text-md-end">
+                    <h6 class="text-white mb-3">Información</h6>
+                    <p class="text-white-50 small mb-1">© 2026 SECSS App</p>
+                    <p class="text-white-50 small">Bogotá, Colombia</p>
+                </div>
+            </div>
+            <hr class="border-secondary my-3">
+            <div class="text-center text-white-50 small">
+                <p class="mb-0">Diseñado con fines académicos - Programa de Formación de Aprendices SENA</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

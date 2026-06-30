@@ -1,0 +1,193 @@
+:root {
+    /* Paleta de Verdes SENA - CEET */
+    --secss-green-dark: #1b5e20;   /* Verde oscuro institucional */
+    --secss-green-main: #39a900;   /* Verde principal SENA */
+    --secss-green-light: #e8f5e9;  /* Verde claro de fondo */
+    
+    /* Identidad CEET (Electricidad, Electrónica y Telecomunicaciones) */
+    --ceet-blue-tech: #00324d;     /* Azul profundo tecnológico de telecomunicaciones */
+    --ceet-silver: #eceff1;        /* Gris claro metalizado industrial */
+    
+    /* Neutros */
+    --secss-gray-dark: #212529;    /* Gris oscuro para textos */
+    --secss-white: #ffffff;
+    
+    /* Tipografía */
+    --font-principal: 'Work Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* 
+   ESTILOS GENERALES Y CONFIGURACIÓN BASE
+    */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: var(--font-principal);
+    color: var(--secss-gray-dark);
+    background-color: #f4f6f7; /* Fondo gris claro industrial */
+}
+
+.main-content, main {
+    flex: 1 0 auto; /* Obliga al footer a quedarse abajo */
+}
+
+/* 
+   HEADER Y MENÚ DE NAVEGACIÓN (Corrección de visibilidad de la imagen)
+    */
+
+/* Forzamos el fondo del header a verde oscuro para que el texto blanco resalte */
+header, .header-secss {
+    background-color: var(--secss-green-dark) !important;
+    border-bottom: 4px solid var(--secss-green-main);
+    color: var(--secss-white) !important;
+}
+
+header h1, header small, header p, header a {
+    color: var(--secss-white) !important;
+}
+
+/* Badge del SENA en el Header */
+.badge-sena {
+    background-color: var(--secss-green-main);
+    color: var(--secss-white) !important;
+    font-weight: bold;
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+/* Menú de Navegación (Navbar) con toque Azul CEET */
+.navbar, .bg-secss-main {
+    background-color: var(--ceet-blue-tech) !important; /* Azul tecnológico CEET */
+    border-bottom: 3px solid var(--secss-green-main);
+}
+
+.navbar .nav-link {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-weight: 500;
+    padding: 8px 16px !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar .nav-link:hover, 
+.navbar .nav-link.active {
+    color: var(--secss-white) !important;
+    background-color: var(--secss-green-main) !important;
+    border-radius: 4px;
+}
+
+/* Botón de Cerrar Sesión en el menú */
+.btn-secss-light {
+    background-color: var(--secss-green-light) !important;
+    color: var(--secss-green-dark) !important;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-secss-light:hover {
+    background-color: var(--secss-white) !important;
+    color: var(--secss-green-main) !important;
+}
+
+/* 
+   COMPONENTES DE CONTENIDO (Tarjetas, Alertas, Botones)
+    */
+
+/* Tarjetas principales del prototipo (Panel de control, Inventarios, Usuarios) */
+.card, .card-secss, .border.bg-white {
+    border: 1px solid rgba(0, 50, 77, 0.12) !important; /* Borde con sutil azul CEET */
+    border-top: 4px solid var(--secss-green-main) !important; /* Línea verde superior */
+    background-color: var(--secss-white) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover, .border.bg-white:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Títulos dentro de componentes */
+.text-secss, h4, h5 {
+    color: var(--secss-green-dark) !important;
+}
+
+/* Botones del Sistema */
+.btn-secss {
+    background-color: var(--secss-green-main) !important;
+    color: var(--secss-white) !important;
+    border: none;
+    font-weight: 500;
+}
+
+.btn-secss:hover {
+    background-color: var(--secss-green-dark) !important;
+}
+
+/* Botón Opciones del Prototipo */
+.dropdown-toggle.btn-dark {
+    background-color: var(--ceet-blue-tech) !important;
+    border: none !important;
+}
+.dropdown-toggle.btn-dark:hover {
+    background-color: var(--secss-green-dark) !important;
+}
+
+/* Alerta Personalizada */
+.alert-secss, .alert-success {
+    background-color: var(--secss-green-light) !important;
+    border: none !important;
+    border-left: 5px solid var(--secss-green-main) !important;
+    color: var(--secss-gray-dark) !important;
+}
+
+/* Tablas de datos */
+.table-secss thead, .table thead {
+    background-color: var(--ceet-blue-tech) !important;
+    color: var(--secss-white) !important;
+}
+
+/* Animación del Spinner */
+.spinner-secss, .spinner-border {
+    border: 0.25em solid var(--secss-green-light) !important;
+    border-right-color: var(--secss-green-main) !important;
+}
+
+/* Enlaces */
+.link-secss {
+    color: var(--secss-green-main);
+    text-decoration: none;
+    font-weight: 500;
+}
+.link-secss:hover {
+    color: var(--secss-green-dark);
+    text-decoration: underline;
+}
+
+/*
+   FOOTER (Pie de Página) */
+footer, .footer-secss {
+    background-color: var(--secss-gray-dark) !important;
+    border-top: 5px solid var(--secss-green-main);
+    color: rgba(255, 255, 255, 0.7) !important;
+    flex-shrink: 0;
+}
+
+footer h5, footer h6 {
+    color: var(--secss-white) !important;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--secss-green-main);
+}
