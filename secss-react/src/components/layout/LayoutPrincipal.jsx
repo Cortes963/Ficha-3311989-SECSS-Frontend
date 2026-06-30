@@ -1,7 +1,7 @@
 // src/components/layout/LayoutPrincipal.jsx
 import { useState } from 'react';
 import { useAuth } from '@/modules/auth/context/AuthContext';
-import { Outlet, useNavigate } from 'react-router-dom';
+import { Outlet, useNavigate, NavLink } from 'react-router-dom';
 
 export const LayoutPrincipal = () => {
   const { user, logout } = useAuth();
@@ -38,9 +38,21 @@ export const LayoutPrincipal = () => {
             </button>
             <div className="collapse navbar-collapse" id="indexNavbar">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li className="nav-item"><a className="nav-link active" href="#"><i className="bi bi-house-door-fill"></i> Inicio</a></li>
-                    <li className="nav-item"><a className="nav-link" href="#"><i className="bi bi-shield-check"></i> Noticias</a></li>
-                    <li className="nav-item"><a className="nav-link" href="#"><i className="bi bi-journal-text"></i> Pico y Placa</a></li>
+                    <li className="nav-item">
+                        <NavLink className="nav-link" to="/">
+                            <i className="bi bi-house-door-fill"></i> Inicio
+                        </NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <NavLink className="nav-link" to="/NewsPage">
+                            <i className="bi bi-shield-check"></i> Noticias
+                        </NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <NavLink className="nav-link" to="/PickPlatePage">
+                            <i className="bi bi-journal-text"></i> Pico y Placa
+                        </NavLink>
+                    </li>
                 </ul>
                 <div className="d-flex align-items-center gap-2">
                     <button className="btn btn-secss-light btn-sm" type="button" onClick={handleLogout}>Cerrar Sesión</button>

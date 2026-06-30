@@ -324,3 +324,277 @@ footer h5, footer h6 {
 .footer-links a:hover {
     color: var(--secss-green-main);
 }
+
+:root {
+    --sena-green: #39A900;
+    --sena-dark-green: #2e8600;
+    --secss-dark: #00324b;
+    --secss-gray-light: #f8f9fa;
+}
+
+/* Títulos y tipografías */
+.text-secss-title {
+    color: var(--secss-dark);
+    font-weight: 700;
+}
+
+.font-weight-bold {
+    font-weight: 600 !important;
+}
+
+.font-weight-medium {
+    font-weight: 500;
+}
+
+/* Caja de Búsqueda */
+.search-box-container {
+    border-left: 5px solid var(--secss-green) !important;
+    background-color: #ffffff;
+}
+
+.btn-secss-search {
+    background-color: var(--secss-green);
+    color: #ffffff;
+    font-weight: 500;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secss-search:hover {
+    background-color: var(--secss-dark-green);
+    color: #ffffff;
+}
+
+/* Tarjeta del Perfil del Aprendiz */
+.card-profile-apprentice {
+    background-color: #ffffff;
+    border-top: 4px solid var(--secss-dark) !important;
+}
+
+.avatar-wrapper .apprentice-photo {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border: 3px solid #e9ecef;
+}
+
+/* Secciones de Datos y Enlaces de Archivos */
+.text-success {
+    color: var(--secss-green) !important;
+}
+
+.bg-secss-main {
+    background-color: var(--secss-dark) !important;
+}
+
+.file-url {
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Componentes Interactivos */
+.border-top {
+    border-top: 1px solid #dee2e6 !important;
+}
+
+.border-bottom {
+    border-bottom: 2px solid #e9ecef !important;
+}
+
+/* Colores institucionales y variables del sistema SECSS */
+:root {
+    --sena-color: #39A900;
+    --secss-dark: #00324D;
+    --secss-light: #F2F4F7;
+    --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Estilos de la plantilla General / Navbar */
+.bg-secss-main {
+    background-color: var(--secss-dark) !important;
+}
+.header-secss {
+    background: linear-gradient(135deg, #001A29 0%, var(--secss-dark) 100%);
+}
+.badge-sena {
+    background-color: var(--sena-color);
+    color: white;
+    padding: 5px 12px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.btn-secss-light {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.btn-secss-light:hover {
+    background-color: white;
+    color: var(--secss-dark);
+}
+.footer-secss {
+    background-color: #001A29;
+}
+
+/* --- Estilos Específicos para la consulta de Cupos --- */
+.cupo-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.2s ease;
+    background: white;
+}
+.cupo-card:hover {
+    transform: translateY(-5px);
+}
+.card-icon-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+.bg-moto-light {
+    background-color: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+}
+.bg-bici-light {
+    background-color: rgba(57, 169, 0, 0.1);
+    color: var(--sena-color);
+}
+.progress {
+    border-radius: 8px;
+    background-color: #E9ECEF;
+}
+.progress-bar-sena {
+    background-color: var(--sena-color);
+}
+.table-responsive-custom {
+    box-shadow: var(--card-shadow);
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+}
+.table-custom-header {
+    background-color: var(--secss-dark);
+    color: white;
+}
+.status-pill {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+.status-active {
+    background-color: rgba(57, 169, 0, 0.15);
+    color: var(--sena-color);
+}
+.img-thumbnail-preview {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+}/* Colores institucionales y variables del sistema SECSS */
+:root {
+    --sena-color: #39A900;
+    --secss-dark: #00324D;
+    --secss-light: #F2F4F7;
+    --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Estilos de la plantilla General / Navbar */
+.bg-secss-main {
+    background-color: var(--secss-dark) !important;
+}
+.header-secss {
+    background: linear-gradient(135deg, #001A29 0%, var(--secss-dark) 100%);
+}
+.badge-sena {
+    background-color: var(--sena-color);
+    color: white;
+    padding: 5px 12px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.btn-secss-light {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.btn-secss-light:hover {
+    background-color: white;
+    color: var(--secss-dark);
+}
+.footer-secss {
+    background-color: #001A29;
+}
+
+/* --- Estilos Específicos para la consulta de Cupos --- */
+.cupo-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.2s ease;
+    background: white;
+}
+.cupo-card:hover {
+    transform: translateY(-5px);
+}
+.card-icon-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+.bg-moto-light {
+    background-color: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+}
+.bg-bici-light {
+    background-color: rgba(57, 169, 0, 0.1);
+    color: var(--sena-color);
+}
+.progress {
+    border-radius: 8px;
+    background-color: #E9ECEF;
+}
+.progress-bar-sena {
+    background-color: var(--sena-color);
+}
+.table-responsive-custom {
+    box-shadow: var(--card-shadow);
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+}
+.table-custom-header {
+    background-color: var(--secss-dark);
+    color: white;
+}
+.status-pill {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+.status-active {
+    background-color: rgba(57, 169, 0, 0.15);
+    color: var(--sena-color);
+}
+.img-thumbnail-preview {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+}

@@ -6,7 +6,7 @@ export const roleCardsData = {
     borderClass: 'border-admin',
     icon: 'bi-gear-fill',
     actions: [
-      { label: 'Resgistros', path: '/usuarios', icon: 'bi-people' },
+      { label: 'Aprendices', path: '/ApprenConsullPage', icon: 'bi-people' },
       { label: 'Reportes', path: '/configuracion', icon: 'bi-sliders' },
       { label: 'Cupos', path: '/auditoria', icon: 'bi-shield-lock' }
     ]
@@ -28,7 +28,8 @@ export const roleCardsData = {
     borderClass: 'border-celador',
     icon: 'bi-person-badge',
     actions: [
-      { label: 'Resgistros', path: '@/modules/input_output/pages/logbook.jsx', icon: 'bi-people' },
+      { label: 'Resgistros', path: '/LogbookPage', icon: 'bi-people' },
+      { label: 'Registrar Entrada/Salida', path: '/RegisterLogbookPage', icon: 'bi-people' },
       { label: 'Reportes', path: '/configuracion', icon: 'bi-sliders' },
       { label: 'Cupos', path: '/auditoria', icon: 'bi-shield-lock' }
     ]
