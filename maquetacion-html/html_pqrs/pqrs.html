@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Radicar PQRS – SECSS</title>
+
+    <!-- Bootstrap CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos propios del proyecto -->
+    <link rel="stylesheet" href="vehiculos.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar-secss d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center gap-3">
+            <div class="sena-logo">SECSS</div>
+            <div>
+                <div class="brand-title">SECSS</div>
+                <div class="brand-sub">Sistema Estacionamiento Complejo Sur – SENA | CEET</div>
+            </div>
+        </div>
+        <div class="centro d-none d-md-block">Centro de Electricidad, Electrónica y Telecomunicaciones</div>
+    </nav>
+
+    <!-- Barra de acento verde -->
+    <div class="accent-bar"></div>
+
+
+    <!--  CONTENIDO PRINCIPAL -->
+    <div class="container py-4" style="max-width: 900px;">
+
+        <!-- Alerta de confirmación (oculta por defecto, la muestra JS) -->
+        <div id="alerta" class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>¡PQRS radicada!</strong> Su solicitud fue registrada correctamente.
+            <button type="button" class="btn-close"
+                onclick="document.getElementById('alerta').style.display='none'">
+            </button>
+        </div>
+
+        <!-- ── Tarjeta principal ── -->
+        <div class="pqrs-card">
+
+            <!-- Hero / Banner -->
+            <div class="hero-banner text-center">
+                <h1>Radicar PQRS</h1>
+                <p>Complete la información requerida y campos obligatorios para registrar su PQRS</p>
+            </div>
+
+            <div class="card-body-inner">
+
+                <!-- ── Tabs de navegación ── -->
+                <ul class="nav nav-tabs-pqrs" id="pqrsTabs">
+                    <li class="nav-item">
+                        <button class="nav-link active" data-tab="nueva">Nueva PQRS</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-tab="reporte">Reporte</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-tab="respuesta">Respuesta</button>
+                    </li>
+                </ul>
+
+
+                <!-- TAB 1 — NUEVA PQRS -->
+                <div id="tab-nueva" class="tab-content-section">
+                    <span class="section-title">Nueva PQRS</span>
+
+                    <input type="hidden" id="pqrs_id_usuario" value="1">
+
+                    <div class="mb-3">
+                        <label class="form-label" for="pqrs_asunto">
+                            Asunto <span class="text-danger">*</span>
+                        </label>
+                        <input type="text" class="form-control" id="pqrs_asunto"
+                               placeholder="Resume el asunto en una línea..." maxlength="1000">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="pqrs_cuerpo">
+                            Cuerpo <span class="text-danger">*</span>
+                        </label>
+                        <textarea class="form-control" id="pqrs_cuerpo" rows="5"
+                            placeholder="Describe con detalle la situación: qué ocurrió, cuándo, dónde, quiénes estaban involucrados...">
+                        </textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="pqrs_estado">Estado del reporte</label>
+                        <select class="form-select" id="pqrs_estado">
+                            <option value="">Todos los estados</option>
+                            <option value="0">Pendiente</option>
+                            <option value="1">En proceso</option>
+                            <option value="2">Resuelto</option>
+                        </select>
+                    </div>
+
+                    <hr class="form-divider">
+                    <div class="text-center">
+                        <button class="btn btn-guardar" onclick="guardarPQRS()">GUARDAR</button>
+                    </div>
+                </div>
+                <!-- /tab-nueva -->
+
+
+                <!-- TAB 2 — REPORTE -->
+                <div id="tab-reporte" class="tab-content-section" style="display:none;">
+                    <span class="section-title">Reporte</span>
+
+                    <div class="row g-3">
+
+                        <div class="col-md-6">
+                            <label class="form-label" for="rep_id_usuario_celador">
+                                ID Usuario Celador <span class="text-danger">*</span>
+                            </label>
+                            <input type="number" class="form-control" id="rep_id_usuario_celador"
+                                   placeholder="ID del celador">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label" for="rep_fecha_hora">
+                                Fecha y hora <span class="text-danger">*</span>
+                            </label>
+                            <input type="datetime-local" class="form-control" id="rep_fecha_hora">
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label" for="rep_asunto">
+                                Asunto <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" class="form-control" id="rep_asunto"
+                                   placeholder="Asunto del reporte..." maxlength="1000">
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label" for="rep_cuerpo">
+                                Cuerpo <span class="text-danger">*</span>
+                            </label>
+                            <textarea class="form-control" id="rep_cuerpo" rows="4"
+                                placeholder="Descripción detallada del reporte...">
+                            </textarea>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label" for="rep_estado">Estado</label>
+                            <select class="form-select" id="rep_estado">
+                                <option value="">Seleccionar estado</option>
+                                <option value="0">Pendiente</option>
+                                <option value="1">En proceso</option>
+                                <option value="2">Resuelto</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label" for="rep_id_entrada_salida">
+                                ID Entrada/Salida
+                            </label>
+                            <input type="number" class="form-control" id="rep_id_entrada_salida"
+                                   placeholder="Opcional">
+                        </div>
+
+                    </div><!-- /row -->
+
+                    <hr class="form-divider">
+                    <div class="text-center">
+                        <button class="btn btn-guardar" onclick="guardarReporte()">GUARDAR REPORTE</button>
+                    </div>
+                </div>
+                <!-- /tab-reporte -->
+
+
+                <!-- TAB 3 — RESPUESTA PQRS -->
+                <div id="tab-respuesta" class="tab-content-section" style="display:none;">
+                    <span class="section-title">Respuesta PQRS</span>
+
+                    <div class="row g-3">
+
+                        <div class="col-md-6">
+                            <label class="form-label" for="res_id_pqrs">
+                                ID PQRS <span class="text-danger">*</span>
+                            </label>
+                            <input type="number" class="form-control" id="res_id_pqrs"
+                                   placeholder="ID de la PQRS a responder">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label" for="res_id_usuario_admin">
+                                ID Usuario Administrador <span class="text-danger">*</span>
+                            </label>
+                            <input type="number" class="form-control" id="res_id_usuario_admin"
+                                   placeholder="ID del administrador">
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label" for="res_asunto">
+                                Asunto <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" class="form-control" id="res_asunto"
+                                   placeholder="Asunto de la respuesta..." maxlength="1000">
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label" for="res_cuerpo">
+                                Cuerpo <span class="text-danger">*</span>
+                            </label>
+                            <textarea class="form-control" id="res_cuerpo" rows="5"
+                                placeholder="Detalle la respuesta a la PQRS...">
+                            </textarea>
+                        </div>
+
+                    </div><!-- /row -->
+
+                    <hr class="form-divider">
+                    <div class="text-center">
+                        <button class="btn btn-guardar" onclick="guardarRespuesta()">GUARDAR RESPUESTA</button>
+                    </div>
+                </div>
+                <!-- /tab-respuesta -->
+
+            </div><!-- /card-body-inner -->
+        </div><!-- /pqrs-card -->
+
+
+        <!-- TABLA DE REGISTROS -->
+        <div class="table-section" id="seccion-tabla" style="display:none;">
+            <h2 id="tabla-titulo">Registros</h2>
+            <div class="table-responsive">
+                <table class="table table-hover align-middle" id="tablaRegistros">
+                    <thead id="tablaCabecera"></thead>
+                    <tbody id="tablaCuerpo"></tbody>
+                </table>
+            </div>
+        </div>
+
+    </div><!-- /container -->
+
+
+    <!-- Bootstrap JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Lógica propia del proyecto  -->
+    <script src="vehiculos.js"></script>
+
+</body>
+
+</html>
